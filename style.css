@@ -76,11 +76,23 @@ nav .signup {
   align-items: center;
   justify-content: space-between;
 }
+#hero img {
+  width: 650px;
+}
 #hero .hero-text {
   color: #cee4ff;
-  width: 490px;
+  width: 500px;
   display: flex;
   flex-direction: column;
+}
+#hero .hero-text a {
+  padding: 16px 32px 16px 32px;
+  background-color: #cee4ff;
+  color: #0f3d91;
+  border-radius: 5px;
+  font-weight: 600;
+  margin-top: 48px;
+  width: fit-content;
 }
 #hero .hero-text .text-top h1 {
   font-size: 56px;
@@ -99,34 +111,28 @@ nav .signup {
   gap: 32px;
   margin-top: 24px;
 }
-#hero .hero-text .text-bottom h2 {
+#hero .hero-text .text-bottom .text-statistic {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#hero .hero-text .text-bottom .text-statistic h2 {
   font-weight: 600;
   font-size: 32px;
   line-height: 48px;
   text-align: center;
 }
-#hero .hero-text .text-bottom p {
+#hero .hero-text .text-bottom .text-statistic p {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-}
-#hero .get-started {
-  padding: 16px 32px 16px 32px;
-  background-color: #cee4ff;
-  color: #0f3d91;
-  border-radius: 5px;
-  font-weight: 600;
-  margin-top: 48px;
-  width: fit-content;
-}
-#hero img {
-  width: 650px;
 }
 
 /* Kalo ada waktu ajarin hover */
 nav .signup:hover {
   background-color: #cee4ff;
 }
-#hero .get-started:hover {
+#hero .hero-text a:hover {
   background-color: #82b0f0;
 }
