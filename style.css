@@ -1,138 +1,80 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 * {
+  font-family: "poppins";
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
 }
 
 a {
   text-decoration: none;
 }
 
-/* navbar */
-nav {
-  position: fixed;
+/* Navigation Bar */
+#navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 32px 160px;
+  position: fixed;
   width: 100%;
-  padding: 32px 100px 32px 100px;
 }
-
-nav .nav-links {
+#navbar .nav-links {
   display: flex;
-  justify-content: center;
-  align-items: center;
   gap: 40px;
   font-size: 18px;
+}
+#navbar .nav-links a {
   color: #cee4ff;
 }
-
-nav .nav-links a {
-  color: #cee4ff;
+#navbar .nav-links a.active {
+  font-weight: 600;
 }
-
-nav .signup {
-  padding: 16px 32px 16px 32px;
-  color: #0f3d91;
+#navbar .sign-up {
   background-color: #82b0f0;
+  color: #0f3d91;
+  padding: 16px 32px;
   border-radius: 5px;
-  font-size: 16px;
   font-weight: 600;
 }
 
-.active {
-  font-weight: 600;
-  position: relative;
-}
-
-/* agak advanced */
-/* ajarin kl sempet aja */
-.active::after {
-  content: "";
-  background: #cee4ff;
-  position: absolute;
-  bottom: -8px;
-  right: 0;
-  left: 0;
-  margin-left: auto;
-  margin-right: auto;
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-}
-
-/* Hero section */
+/* Hero Section */
 #hero {
-  min-height: 100vh;
-  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  padding: 32px 300px;
   background-image: url("asset/background.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 32px 250px 32px 250px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-#hero img {
-  width: 650px;
+  color: #cee4ff;
 }
 #hero .hero-text {
-  color: #cee4ff;
-  width: 500px;
   display: flex;
   flex-direction: column;
+  gap: 40px;
 }
-#hero .hero-text a {
-  padding: 16px 32px 16px 32px;
-  background-color: #cee4ff;
-  color: #0f3d91;
-  border-radius: 5px;
-  font-weight: 600;
-  margin-top: 48px;
-  width: fit-content;
+#hero .hero-text .text-top {
+  width: 600px;
 }
 #hero .hero-text .text-top h1 {
-  font-size: 56px;
-  font-weight: 700;
-  line-height: 130%;
-  margin-bottom: 8px;
+  font-size: 68px;
 }
-#hero .hero-text .text-top p {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  width: 404px;
-}
-#hero .hero-text .text-bottom {
+#hero .hero-text .text-middle {
   display: flex;
-  gap: 32px;
-  margin-top: 24px;
-}
-#hero .hero-text .text-bottom .text-statistic {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-#hero .hero-text .text-bottom .text-statistic h2 {
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 48px;
+  gap: 40px;
   text-align: center;
 }
-#hero .hero-text .text-bottom .text-statistic p {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
+#hero .hero-text .text-middle .middle-content h1 {
+  font-size: 32px;
 }
-
-/* Kalo ada waktu ajarin hover */
-nav .signup:hover {
+#hero .hero-text .get-started {
   background-color: #cee4ff;
-}
-#hero .hero-text a:hover {
-  background-color: #82b0f0;
+  color: #0f3d91;
+  padding: 16px 32px;
+  border-radius: 5px;
+  font-weight: 600;
+  width: fit-content;
 }
