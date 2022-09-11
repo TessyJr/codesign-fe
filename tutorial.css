@@ -1,0 +1,16 @@
+/* styling berdasarkan tag */
+h2 {
+  background-color: pink;
+}
+
+/* styling berdasarkan id */
+#hero {
+  color: cyan;
+  background-color: black;
+}
+
+/* styling berdasarkan class */
+.class1 {
+  background-color: green;
+  color: pink;
+}
